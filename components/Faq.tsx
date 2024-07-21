@@ -51,8 +51,8 @@ const Faq = () => {
         <div className='container'>
             <h2 className='text-5xl sm:text-6xl max-w-[648px] mx-auto font-bold tracking-tighter text-center'>Frequently asked questions</h2>
             <div className='mt-12 max-w-[648px] mx-auto'>
-                {items.map(({question,answer}) => (
-                    <AccordionItem question={question} answer={answer}/>
+                {items.map(({question,answer},i) => (
+                    <AccordionItem question={question} answer={answer} key={i}/>
                 ))}
             </div>
         </div>
