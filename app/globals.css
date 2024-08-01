@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (max-width: 768px) { /* Adjust max-width as needed */
+    .helix-icon, .emoji-star-icon {
+      display: none;
+    }
+}
